@@ -14,4 +14,4 @@ def test_ebay_search_multiple_jewelry(browser, item):
     browser.get('https://www.ebay.com')
     browser.find_element(By.ID, 'gh-ac').send_keys(item)
     browser.find_element(By.ID, 'gh-btn').click()
-    assert item in browser.title)
+    assert item in browser.title
